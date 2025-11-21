@@ -1,7 +1,6 @@
 # Trabalho Final - Persistência Poliglota (Redis + PostgreSQL)
 
-Este projeto implementa um CRUD integrado utilizando **PostgreSQL** para persistência de dados relacionais e **Redis** para cache/sessão, conforme solicitado na Etapa 4 da disciplina.
-
+Este projeto implementa um CRUD integrado utilizando **PostgreSQL** para persistência de dados relacionais e **Redis** para cache/sessão.
 ## Tecnologias Utilizadas
 * Python 3
 * PostgreSQL (via Docker)

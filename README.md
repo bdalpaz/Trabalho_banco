@@ -1,4 +1,4 @@
-# Trabalho Final - Persistência Poliglota (Redis + PostgreSQL)
+# Trabalho Final - (Redis + PostgreSQL)
 
 Este projeto implementa um CRUD integrado utilizando **PostgreSQL** para persistência de dados relacionais e **Redis** para cache/sessão.
 ## Tecnologias Utilizadas

@@ -1,0 +1,244 @@
+Universidade Comunitária da Região de Chapecó – Unochapecó
+Escola Politécnica – Ciência da Computação/Sistemas de Informação
+Banco de Dados II
+Profa. Monica Tissiani De Toni Pereira
+Alunos: Alice Botton Dal Paz, Anthony Guilherme Cazuni da Silva e Gabriel Henrique Robette Ferri
+
+1. Instalação do Python
+
+
+2. Criação do diretório do projeto
+
+
+3. Criação do ambiente virtual (venv)
+
+
+4. Ativação do ambiente virtual
+
+
+5. Instalação do Neo4j
+
+
+6. Inicialização da instância do Neo4j ativa
+
+
+7. Escolha da IDE (VSCode)
+
+
+8. Instalação da extensão Python no VSCode
+
+
+
+9. Abertura da pasta do projeto no VSCode
+
+
+
+
+10. Criação e Teste do Arquivo Python
+
+
+
+
+11. Métodos da classe Driver da biblioteca Neo4j em Python
+Na biblioteca oficial do Neo4j para Python (neo4j), o objeto Driver é responsável por gerenciar a conexão e fornecer sessões para executar consultas. Os principais métodos da classe Driver são:
+1. session()
+ 
+Cria uma sessão para executar transações ou consultas.
+from neo4j import GraphDatabase
+
+driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "senha"))
+
+with driver.session() as session:
+    result = session.run("MATCH (n) RETURN n LIMIT 5")
+    for record in result:
+        print(record)
+
+ 2. close()
+
+ Encerra a conexão com o banco de dados e libera os recursos.
+driver.close()
+
+3. verify_connectivity()
+Testa se a conexão com o banco está ativa e funcionando.
+try:
+    driver.verify_connectivity()
+    print("Conexão bem-sucedida!")
+except Exception as e:
+    print(f"Falha na conexão: {e}")
+
+4. execute_query() 
+
+ Executa uma consulta sem precisar abrir a sessão manualmente.
+result = driver.execute_query("MATCH (p:Pessoa) RETURN p.nome AS nome")
+for record in result.records:
+    print(record["nome"])
+
+
+5. session(database="nome_do_banco")
+
+ Permite escolher explicitamente em qual banco executar as consultas.
+with driver.session(database="neo4j") as session:
+    result = session.run("MATCH (n) RETURN count(n)")
+    print(result.single()[0])
+
+
+
+12.  Pergunte também como o texto gerado pela IA pode ser referenciado na documentação do projeto e adicione a referência ao texto gerado.
+Quando utilizamos conteúdos gerados por Inteligência Artificial, como explicações técnicas, exemplos de código ou definições conceituais, é importante registrar essa contribuição na documentação do projeto, preservando a transparência acadêmica. A IA pode ser citada como fonte de consulta, assim como artigos, livros e sites. No caso do ChatGPT (OpenAI), como o conteúdo é gerado dinamicamente e não possui uma página específica, a recomendação é fazer uma referência simples, mencionando a ferramenta, o tema consultado e a data de acesso.
+Além disso, deve-se indicar no corpo do texto ou em nota de rodapé quando determinada explicação foi obtida com auxílio da IA. Essa prática demonstra que o material foi construído com apoio tecnológico, mas analisado e interpretado pelo estudante.
+A seguir, um exemplo de como essa referência pode ser incorporada ao projeto:
+Parte das explicações sobre os métodos da classe Driver da biblioteca Neo4j em Python foram elaboradas com o auxílio da ferramenta ChatGPT, da OpenAI, utilizada como apoio técnico para consulta e esclarecimento de conceitos.
+E nas referências do documento, pode ser registrada da seguinte forma:
+OPENAI. ChatGPT. Respostas fornecidas sobre os métodos da classe Driver do Neo4j em Python. Acesso em: 20 nov. 2025.
+Essa forma de registro atende ao requisito de documentar o uso da IA como fonte de consulta, sem necessidade de incluir um link específico, já que o conteúdo é acessado por meio de uma plataforma interativa.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

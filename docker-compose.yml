@@ -4,8 +4,8 @@ services:
     image: postgres:13
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: sua_senha
-      POSTGRES_DB: meu_banco
+      POSTGRES_PASSWORD: postgrestrabalho
+      POSTGRES_DB: trabalho_final
     ports:
       - "5433:5432"
 

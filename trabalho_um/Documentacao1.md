@@ -6,37 +6,44 @@ Alunos: Alice Botton Dal Paz, Anthony Guilherme Cazuni da Silva e Gabriel Henriq
 
 1. Instalação do Python
 
+![instalacao_python](/assets/instalacao_python.png)
 
 2. Criação do diretório do projeto
 
+![criacao_diretorio](/assets/criacao_diretorio.png)
 
 3. Criação do ambiente virtual (venv)
 
+![criacao_venv](/assets/criacao_venv.png)
 
 4. Ativação do ambiente virtual
 
+![ativacao_ambiente_virtual](/assets/ativacao_ambiente_virtual.png)
 
 5. Instalação do Neo4j
 
+![instalacao_neo4j](/assets/instalacao_neo4j.png)
 
 6. Inicialização da instância do Neo4j ativa
 
+![inicializacao_instanci](/assets/inicializacao_instancia.png)
 
 7. Escolha da IDE (VSCode)
 
+![escolha_ide](/assets/escolha_ide.png)
 
 8. Instalação da extensão Python no VSCode
 
-
+![instalacao_extensao_python](/assets/instalacao_extensao_python.png)
 
 9. Abertura da pasta do projeto no VSCode
 
 
-
+![abertura_projeto](/assets/abertura_projeto.png)
 
 10. Criação e Teste do Arquivo Python
 
-
+![criacao_teste](/assets/criacao_teste.png)
 
 
 11. Métodos da classe Driver da biblioteca Neo4j em Python
@@ -91,154 +98,3 @@ Parte das explicações sobre os métodos da classe Driver da biblioteca Neo4j e
 E nas referências do documento, pode ser registrada da seguinte forma:
 OPENAI. ChatGPT. Respostas fornecidas sobre os métodos da classe Driver do Neo4j em Python. Acesso em: 20 nov. 2025.
 Essa forma de registro atende ao requisito de documentar o uso da IA como fonte de consulta, sem necessidade de incluir um link específico, já que o conteúdo é acessado por meio de uma plataforma interativa.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
